@@ -11,6 +11,43 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config={
+               
+      content: ["*"],
+      theme: {
+        extend: {
+          fontFamily: {
+            montserrat: ["Montserrat", "sans-serif"],
+            playFair:["Playfair Display", "serif"],
+            amarnath:["Amaranth", "sans-serif"],
+            charm:[ "Belleza", "sans-serif"],
+        },
+        colors: {
+          lightRed: "#FF6666",
+          lightYellow:"#FFD324",
+          lightPurple:"#6F77F4",
+          lightishGray:"#D8D8D8",
+          charcDisplay:"#3A3A3A",
+        },
+       animation: {
+          'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+        keyframes: {
+          'infinite-scroll': {
+              from: { transform: 'translateX(0)' },
+              to: { transform: 'translateX(-100%)' },
+          }
+      }                    
+    },
+      },
+      plugins: [],
+    }
+    
+    
+    
+         </script>
     
     </head>
     <style>
